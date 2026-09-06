@@ -2,8 +2,8 @@ SOURCE CODES
 ---
 
 ## FIREFOX SOURCE CODE
-https://github.com/insanmusti/kick-yayin-takipcisi
+https://github.com/akamusti/kick-yayin-takipcisi
 
 ---
 ## CHROMİUM SOURCE CODE
-https://github.com/insanmusti/kick-takipci-chromium
+https://github.com/akamusti/kick-takipci-chromium
