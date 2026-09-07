@@ -2,7 +2,6 @@
   var KEY = "kick-notifier-lang";
   var i18n = {
     tr: {
-      "nav.releases": "Yenilikler",
       "nav.features": "Özellikler",
       "nav.download": "İndir",
       "nav.docs": "Kurulum",
@@ -13,11 +12,6 @@
         "Favori yayıncıların canlı olup olmadığını, izleyici sayılarını ve profil bilgilerini tek bakışta gösteren tarayıcı eklentisi. Gereksiz hiçbir şey yok.",
       "intro.dl.firefox": "Firefox için indir",
       "intro.dl.chromium": "Chromium için indir",
-      "new.title": "Yenilikler",
-      "new.when": "27 Ağustos 2026",
-      "new.c1": "<strong>Chromium</strong> sürümüne dil desteği eklendi.",
-      "new.c2":
-        "Eklenti artık <strong>İngilizce</strong> ve <strong>Almanca</strong> dillerinde de kullanılabiliyor.",
       "feat.title": "Özellikler",
       "feat.list": "Takip listesi",
       "feat.list.d": "İstediğin Kick kullanıcılarını ekleyip tek listede yönet.",
@@ -76,7 +70,6 @@
         "İndirme ve kurulum için doğrudan GitHub Releases bölümünü kullan; böylece eklentinin güncel sürümünü güvenli şekilde almış olursun."
     },
     en: {
-      "nav.releases": "Changelog",
       "nav.features": "Features",
       "nav.download": "Download",
       "nav.docs": "Setup",
@@ -87,11 +80,6 @@
         "A browser extension that shows whether your favorite streamers are live, their viewer counts and profile info at a glance. Nothing extra.",
       "intro.dl.firefox": "Download for Firefox",
       "intro.dl.chromium": "Download for Chromium",
-      "new.title": "Changelog",
-      "new.when": "August 27, 2026",
-      "new.c1": "Language support added to the <strong>Chromium</strong> version.",
-      "new.c2":
-        "The extension is now also available in <strong>English</strong> and <strong>German</strong>.",
       "feat.title": "Features",
       "feat.list": "Follow list",
       "feat.list.d": "Add any Kick users you want and manage them in one list.",
