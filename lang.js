@@ -49,7 +49,7 @@
         "Bu politikada yapılacak değişiklikler GitHub deposunda duyurulacaktır. Güncellemeler için Depo sayfasını takip edebilirsiniz.",
       "privacy.contact.title": "İletişim",
       "privacy.contact.p1":
-        "Sorularınız için GitHub üzerinden iletişime geçebilirsiniz:",
+        'Sorularınız için GitHub üzerinden iletişime geçebilirsiniz: <a href="https://github.com/akamusti/kick-notifier/issues" target="_blank" rel="noreferrer">GitHub Issues</a> veya kişisel sitemden bana ulaşabilirsiniz: <a href="https://akamusti.github.io/" target="_blank" rel="noreferrer">akamusti.github.io</a>',
       "privacy.lastupdated": "Son güncelleme: 3 Eylül 2026",
       "docs.h1": "Releases bölümünden indirip tarayıcına yükle.",
       "docs.lead":
@@ -117,7 +117,7 @@
         "Changes to this policy will be announced on the GitHub repository. You can follow the repo page for updates.",
       "privacy.contact.title": "Contact",
       "privacy.contact.p1":
-        "For questions, you can reach us via GitHub:",
+        'For questions, you can reach us via GitHub: <a href="https://github.com/akamusti/kick-notifier/issues" target="_blank" rel="noreferrer">GitHub Issues</a> or find me here: <a href="https://akamusti.github.io/" target="_blank" rel="noreferrer">akamusti.github.io</a>',
       "privacy.lastupdated": "Last updated: September 3, 2026",
       "docs.h1": "Download from Releases and install it in your browser.",
       "docs.lead":
