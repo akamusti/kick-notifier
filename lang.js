@@ -21,7 +21,7 @@
       "feat.viewers.d": "Canlı yayınların izleyici hacmini ve aktivitesini gör.",
       "dl.title": "İndir",
       "dl.firefox": "Firefox",
-      "dl.firefox.d": ".xpi dosyasıyla kurulur.",
+      "dl.firefox.d": "Firefox eklenti mağazasından (AMO) kurulur.",
       "dl.firefox.a": "AMO sayfası",
       "dl.chromium": "Chromium",
       "dl.chromium.d": "Chrome, Edge ve Brave; geliştirici moduyla yüklenir.",
@@ -51,9 +51,9 @@
       "privacy.contact.p1":
         'Sorularınız için GitHub üzerinden iletişime geçebilirsiniz: <a href="https://github.com/akamusti/kick-notifier/issues" target="_blank" rel="noreferrer">GitHub Issues</a> veya kişisel sitemden bana ulaşabilirsiniz: <a href="https://akamusti.github.io/" target="_blank" rel="noreferrer">akamusti.github.io</a>',
       "privacy.lastupdated": "Son güncelleme: 3 Eylül 2026",
-      "docs.h1": "Releases bölümünden indirip tarayıcına yükle.",
+      "docs.h1": "Tarayıcına uygun şekilde indirip yükle.",
       "docs.lead":
-        "Firefox için .xpi dosyasını, Chromium tabanlı tarayıcılar için zip arşivini GitHub Releases bölümünden indir.",
+        "Firefox için AMO üzerinden, Chromium tabanlı tarayıcılar için zip arşivini GitHub Releases bölümünden indir.",
       "docs.firefox": "Firefox — AMO'dan kurulum",
       "docs.ff.desc": "Eklentiyi doğrudan Firefox eklenti mağazasından (AMO) kur.",
       "docs.ff.btn": "Firefox'tan indir",
@@ -67,7 +67,7 @@
         "Çıkarttığın <strong>kick-takipci-chromium</strong> klasörünü seç.",
       "docs.chr": "Chromium releases sayfası",
       "docs.note":
-        "İndirme ve kurulum için doğrudan GitHub Releases bölümünü kullan; böylece eklentinin güncel sürümünü güvenli şekilde almış olursun."
+        "Firefox için AMO sayfasını, Chromium için GitHub Releases bölümünü kullan; böylece eklentinin güncel sürümünü güvenli şekilde almış olursun."
     },
     en: {
       "nav.features": "Features",
@@ -89,7 +89,7 @@
       "feat.viewers.d": "See viewer volume and activity for live streams.",
       "dl.title": "Download",
       "dl.firefox": "Firefox",
-      "dl.firefox.d": "Installed from a .xpi file.",
+      "dl.firefox.d": "Installed from the Firefox add-on store (AMO).",
       "dl.firefox.a": "AMO page",
       "dl.chromium": "Chromium",
       "dl.chromium.d": "Chrome, Edge and Brave; loaded in developer mode.",
@@ -119,9 +119,9 @@
       "privacy.contact.p1":
         'For questions, you can reach us via GitHub: <a href="https://github.com/akamusti/kick-notifier/issues" target="_blank" rel="noreferrer">GitHub Issues</a> or find me here: <a href="https://akamusti.github.io/" target="_blank" rel="noreferrer">akamusti.github.io</a>',
       "privacy.lastupdated": "Last updated: September 3, 2026",
-      "docs.h1": "Download from Releases and install it in your browser.",
+      "docs.h1": "Download for your browser and install it.",
       "docs.lead":
-        "Download the .xpi file for Firefox and the zip archive for Chromium-based browsers from the GitHub Releases section.",
+        "Install from AMO for Firefox, and download the zip archive from the GitHub Releases section for Chromium-based browsers.",
       "docs.firefox": "Firefox — install from AMO",
       "docs.ff.desc": "Install the extension directly from the Firefox Add-ons store (AMO).",
       "docs.ff.btn": "Download from Firefox",
@@ -134,7 +134,7 @@
       "docs.c5": "Select the <strong>kick-takipci-chromium</strong> folder you extracted.",
       "docs.chr": "Chromium releases page",
       "docs.note":
-        "Download and install directly from the GitHub Releases section, so you safely get the latest version of the extension."
+        "Use the AMO page for Firefox and the GitHub Releases section for Chromium, so you safely get the latest version of the extension."
     }
   };
 
