@@ -14,12 +14,21 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   background: var(--bg);
   color: var(--text);
   font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+/* minimal home background */
+body.home {
+  background:
+    radial-gradient(640px 320px at 50% 118%, rgba(83, 252, 24, 0.09), transparent 70%),
+    radial-gradient(900px 480px at 50% -12%, rgba(83, 252, 24, 0.05), transparent 65%),
+    var(--bg);
 }
 
 img { display: block; }
@@ -113,6 +122,66 @@ nav a:hover { color: var(--text); }
 }
 
 main { flex: 1; }
+
+/* minimal single-screen hero */
+
+.hero-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 64px 0 72px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 auto 18px;
+  max-width: 22ch;
+  font-size: clamp(2rem, 5.4vw, 2.9rem);
+  font-weight: 650;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.hero .lead {
+  max-width: 48ch;
+  margin: 0 auto;
+  color: var(--muted);
+  text-wrap: balance;
+}
+
+.hero .actions {
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.hero .btn {
+  min-width: 220px;
+  height: 48px;
+  padding: 0 24px;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0 0 22px;
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg-soft);
+  color: var(--muted);
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.04em;
+}
 
 /* intro */
 
@@ -340,7 +409,19 @@ code {
 
 .site-footer a:hover { color: var(--text); }
 
+.foot-links {
+  display: inline-flex;
+  gap: 18px;
+}
+
 @media (max-width: 560px) {
+  .hero { padding: 48px 0 56px; }
+
+  .hero .btn {
+    width: 100%;
+    min-width: 0;
+  }
+
   .intro { padding: 56px 0 44px; }
 
   .downloads { grid-template-columns: 1fr; }
