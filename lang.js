@@ -2,139 +2,126 @@
   var KEY = "kick-notifier-lang";
   var i18n = {
     tr: {
-      "nav.features": "Özellikler",
-      "nav.download": "İndir",
-      "nav.docs": "Kurulum",
-      "nav.docs.index": "Kurulum Rehberi",
       "nav.home": "Anasayfa",
+      "nav.docs": "Kurulum",
+      "intro.badge": "v1.2 · firefox · chrome · edge · brave",
       "intro.h1": "Takip ettiğin Kick yayıncılarını hiç kaçırma.",
       "intro.lead":
-        "Favori yayıncıların canlı olup olmadığını, izleyici sayılarını ve profil bilgilerini tek bakışta gösteren tarayıcı eklentisi. Gereksiz hiçbir şey yok.",
+        "Favori yayıncıların canlı olup olmadığını, izleyici sayılarını ve profil bilgilerini tek bakışta gösteren açık kaynaklı tarayıcı eklentisi. Gereksiz hiçbir şey yok.",
       "intro.dl.firefox": "Firefox için indir",
       "intro.dl.chromium": "Chromium için indir",
-      "feat.title": "Özellikler",
-      "feat.list": "Takip listesi",
-      "feat.list.d": "İstediğin Kick kullanıcılarını ekleyip tek listede yönet.",
-      "feat.live": "Canlı durumu",
-      "feat.live.d": "Yayın açık mı, kapalı mı; tek bakışla öğren.",
-      "feat.viewers": "İzleyici bilgisi",
-      "feat.viewers.d": "Canlı yayınların izleyici hacmini ve aktivitesini gör.",
-      "dl.title": "İndir",
-      "dl.firefox": "Firefox",
-      "dl.firefox.d": "Firefox eklenti mağazasından (AMO) kurulur.",
-      "dl.firefox.a": "AMO sayfası",
-      "dl.chromium": "Chromium",
-      "dl.chromium.d": "Chrome, Edge ve Brave; geliştirici moduyla yüklenir.",
-      "dl.chromium.a": "Releases sayfası",
+      "intro.pill.light": "⚡ Ultra Hafif",
+      "intro.pill.privacy": "🛡️ Sıfır İzleyici & Reklamsız",
+      "intro.pill.opensource": "✨ %100 Açık Kaynak",
+      "mockup.live_count": "2 CANLI",
+      "mockup.search": "Yayıncı ara veya ekle...",
+      "mockup.live": "● CANLI",
+      "mockup.viewers": "izleyici",
+      "mockup.cat1": "Sohbet & Muhabbet",
+      "mockup.cat2": "Grand Theft Auto V",
+      "mockup.offline": "Çevrimdışı",
+      "mockup.ago": "2s önce yayındaydı",
+      "docs.h1": "Tarayıcına uygun şekilde indirip yükle.",
+      "docs.lead":
+        "Firefox için AMO üzerinden tek tıkla, Chromium tabanlı tarayıcılar için zip arşivini GitHub Releases bölümünden indirip kurabilirsin.",
+      "docs.firefox": "Firefox — AMO'dan kurulum",
+      "docs.ff.desc": "Eklentiyi doğrudan resmi Firefox Eklenti Mağazası'ndan (AMO) güvenle kur.",
+      "docs.ff.btn": "Firefox AMO'dan İndir",
+      "docs.chromium": "Chromium (Chrome, Edge, Brave) — geliştirici moduyla kurulum",
+      "docs.c1": "GitHub releases sayfasından son sürüm .zip dosyasını indir ve bir klasöre çıkart.",
+      "docs.c2_prefix": "Tarayıcının adres çubuğuna şunu yazıp Enter'a bas:",
+      "docs.c3": "Sağ üst köşedeki <strong>Geliştirici modu</strong> (Developer mode) anahtarını aç.",
+      "docs.c4": "Sol üstteki <strong>Paketlenmemiş öğe yükle</strong> (Load unpacked) butonuna tıkla.",
+      "docs.c5": "Çıkarttığın <strong>kick-takipci-chromium</strong> klasörünü seç.",
+      "docs.copy": "Kopyala",
+      "docs.copied": "Kopyalandı!",
+      "docs.chr": "Chromium releases sayfası",
+      "docs.note":
+        "💡 Firefox için AMO sayfasını, Chromium için GitHub Releases bölümünü kullan; böylece eklentinin güncel sürümünü her zaman güvenli şekilde almış olursun.",
+      "privacy.badge": "🛡️ %100 Gizlilik Odaklı & Yerel Depolama",
+      "privacy.h1": "Gizlilik Politikası",
+      "privacy.lead":
+        "Kick Notifier gizliliğinize en üst düzeyde önem verir. Bu sayfa, eklentinin hangi verileri kullandığını ve nasıl korunduğunu açıklar.",
+      "privacy.collection.title": "Veri Toplama ve Kullanım",
+      "privacy.collection.p1":
+        "Kick Notifier, takip ettiğiniz yayıncıların canlı yayın durumunu ve izleyici sayılarını çekmek için doğrudan resmi Kick API'sine istek gönderir. Bu istekler yalnızca eklenti penceresi açıkken gerçekleşir.",
+      "privacy.collection.p2":
+        "Eklenti hiçbir kişisel veri, kimlik bilgisi, tarama geçmişi veya kullanım istatistiği toplamaz ve kaydetmez.",
+      "privacy.storage.title": "Veri Saklama (Yerel Depolama)",
+      "privacy.storage.p1":
+        "Takip listeniz ve dil seçiminiz yalnızca tarayıcınızın kendi yerel depolama alanında (localStorage) saklanır. Bu veriler cihazınızdan asla dışarı çıkmaz ve üçüncü kişilerle paylaşılmaz.",
+      "privacy.thirdparty.title": "Üçüncü Taraf Hizmetleri",
+      "privacy.thirdparty.p1":
+        "Eklenti, Kick API haricinde hiçbir sunucuya veya üçüncü taraf servise bağlanmaz. Reklam, analitik, telemetri veya izleme aracı içermez.",
+      "privacy.contact.title": "İletişim & Katkı",
+      "privacy.contact.p1":
+        'Her türlü soru, öneri veya hata bildirimi için <a class="link-accent" href="https://github.com/akamusti/kick-notifier/issues" target="_blank" rel="noreferrer">GitHub Issues</a> üzerinden iletişime geçebilir veya <a class="link-accent" href="https://akamusti.github.io/" target="_blank" rel="noreferrer">akamusti.github.io</a> adresini ziyaret edebilirsiniz.',
+      "privacy.lastupdated": "Son güncelleme: 2026",
       "footer.copy": "© 2026 akamusti",
       "footer.home": "kurulum rehberi",
       "footer.home.index": "anasayfa",
-      "footer.privacy": "gizlilik politikası",
-      "privacy.h1": "Gizlilik Politikası",
-      "privacy.lead":
-        "Kick Notifier gizliliğinize önem verir. Bu sayfa, eklentinin hangi verileri topladığını ve nasıl kullanıldığını açıklar.",
-      "privacy.collection.title": "Veri Toplama",
-      "privacy.collection.p1":
-        "Kick Notifier, takip ettiğiniz Kick kullanıcılarının adlarını ve izleyici sayılarını göstermek için Kick API'sine istekler gönderir. Bu istekler yalnızca eklenti açıkken ve siz-manuel olarak tetiklediğinizde yapılır.",
-      "privacy.collection.p2":
-        "Eklenti herhangi bir kişisel veri, tanımlayıcı bilgi veya kullanım istatistiği toplamaz.",
-      "privacy.storage.title": "Veri Saklama",
-      "privacy.storage.p1":
-        "Takip listeniz ve dil tercihiniz yalnızca tarayıcınızın yerel depolama alanında (localStorage) saklanır. Bu veriler cihazınızdan dışarı çıkmaz ve bizim tarafımızdan erişilemez.",
-      "privacy.thirdparty.title": "Üçüncü Taraf Hizmetleri",
-      "privacy.thirdparty.p1":
-        "Eklenti, Kick API dışında herhangi bir üçüncü taraf hizmetiyle bağlantı kurmaz. Reklam, analitik veya izleme aracı kullanılmaz.",
-      "privacy.changes.title": "Politika Değişiklikleri",
-      "privacy.changes.p1":
-        "Bu politikada yapılacak değişiklikler GitHub deposunda duyurulacaktır. Güncellemeler için Depo sayfasını takip edebilirsiniz.",
-      "privacy.contact.title": "İletişim",
-      "privacy.contact.p1":
-        'Sorularınız için GitHub üzerinden iletişime geçebilirsiniz: <a href="https://github.com/akamusti/kick-notifier/issues" target="_blank" rel="noreferrer">GitHub Issues</a> veya kişisel sitemden bana ulaşabilirsiniz: <a href="https://akamusti.github.io/" target="_blank" rel="noreferrer">akamusti.github.io</a>',
-      "privacy.lastupdated": "Son güncelleme: 3 Eylül 2026",
-      "docs.h1": "Tarayıcına uygun şekilde indirip yükle.",
-      "docs.lead":
-        "Firefox için AMO üzerinden, Chromium tabanlı tarayıcılar için zip arşivini GitHub Releases bölümünden indir.",
-      "docs.firefox": "Firefox — AMO'dan kurulum",
-      "docs.ff.desc": "Eklentiyi doğrudan Firefox eklenti mağazasından (AMO) kur.",
-      "docs.ff.btn": "Firefox'tan indir",
-      "docs.amo": "Firefox AMO sayfası",
-      "docs.chromium": "Chromium — geliştirici moduyla kurulum",
-      "docs.c1": "GitHub releases sayfasından zip dosyasını indir ve bir klasöre çıkart.",
-      "docs.c2": "<code>chrome://extensions</code> adresine gir.",
-      "docs.c3": "Sağ üst köşedeki <strong>Geliştirici modu</strong> anahtarını aç.",
-      "docs.c4": "<strong>Paketlenmemiş öğe yükle</strong> (Load unpacked) butonuna tıkla.",
-      "docs.c5":
-        "Çıkarttığın <strong>kick-takipci-chromium</strong> klasörünü seç.",
-      "docs.chr": "Chromium releases sayfası",
-      "docs.note":
-        "Firefox için AMO sayfasını, Chromium için GitHub Releases bölümünü kullan; böylece eklentinin güncel sürümünü güvenli şekilde almış olursun."
+      "footer.privacy": "gizlilik politikası"
     },
     en: {
-      "nav.features": "Features",
-      "nav.download": "Download",
-      "nav.docs": "Setup",
-      "nav.docs.index": "Setup Guide",
       "nav.home": "Home",
+      "nav.docs": "Setup",
+      "intro.badge": "v1.2 · firefox · chrome · edge · brave",
       "intro.h1": "Never miss the Kick streamers you follow.",
       "intro.lead":
-        "A browser extension that shows whether your favorite streamers are live, their viewer counts and profile info at a glance. Nothing extra.",
+        "An open-source browser extension that displays streamer live status, viewer counts, and profiles at a single glance. Zero bloat.",
       "intro.dl.firefox": "Download for Firefox",
       "intro.dl.chromium": "Download for Chromium",
-      "feat.title": "Features",
-      "feat.list": "Follow list",
-      "feat.list.d": "Add any Kick users you want and manage them in one list.",
-      "feat.live": "Live status",
-      "feat.live.d": "See at a glance whether a stream is live or not.",
-      "feat.viewers": "Viewer info",
-      "feat.viewers.d": "See viewer volume and activity for live streams.",
-      "dl.title": "Download",
-      "dl.firefox": "Firefox",
-      "dl.firefox.d": "Installed from the Firefox add-on store (AMO).",
-      "dl.firefox.a": "AMO page",
-      "dl.chromium": "Chromium",
-      "dl.chromium.d": "Chrome, Edge and Brave; loaded in developer mode.",
-      "dl.chromium.a": "Releases page",
+      "intro.pill.light": "⚡ Ultra Lightweight",
+      "intro.pill.privacy": "🛡️ Zero Tracking & No Ads",
+      "intro.pill.opensource": "✨ 100% Open Source",
+      "mockup.live_count": "2 LIVE",
+      "mockup.search": "Search or add streamer...",
+      "mockup.live": "● LIVE",
+      "mockup.viewers": "viewers",
+      "mockup.cat1": "Just Chatting",
+      "mockup.cat2": "Grand Theft Auto V",
+      "mockup.offline": "Offline",
+      "mockup.ago": "Streamed 2h ago",
+      "docs.h1": "Download and install for your browser.",
+      "docs.lead":
+        "Install with one click from AMO for Firefox, or download the zip archive from GitHub Releases for Chromium-based browsers.",
+      "docs.firefox": "Firefox — Install from AMO",
+      "docs.ff.desc": "Install the extension safely and directly from the official Firefox Add-ons store (AMO).",
+      "docs.ff.btn": "Download from Firefox AMO",
+      "docs.chromium": "Chromium (Chrome, Edge, Brave) — Install via developer mode",
+      "docs.c1": "Download the latest release .zip from GitHub releases and extract it to a folder.",
+      "docs.c2_prefix": "Enter the following in your browser's address bar and press Enter:",
+      "docs.c3": "Enable the <strong>Developer mode</strong> toggle in the top-right corner.",
+      "docs.c4": "Click the <strong>Load unpacked</strong> button in the top menu.",
+      "docs.c5": "Select the extracted <strong>kick-takipci-chromium</strong> folder.",
+      "docs.copy": "Copy",
+      "docs.copied": "Copied!",
+      "docs.chr": "Chromium releases page",
+      "docs.note":
+        "💡 Use AMO for Firefox and GitHub Releases for Chromium to ensure you always get the latest and safest release.",
+      "privacy.badge": "🛡️ 100% Privacy Focused & Local Storage",
+      "privacy.h1": "Privacy Policy",
+      "privacy.lead":
+        "Kick Notifier takes your privacy very seriously. This page explains what data is accessed and how it is protected.",
+      "privacy.collection.title": "Data Collection & Usage",
+      "privacy.collection.p1":
+        "Kick Notifier queries the official Kick API to fetch live status and viewer numbers for streamers you follow. These requests only run when the extension popup is open.",
+      "privacy.collection.p2":
+        "The extension does not collect, record, or track any personal data, telemetry, identity, or browsing history.",
+      "privacy.storage.title": "Data Storage (Local Storage)",
+      "privacy.storage.p1":
+        "Your follow list and language preferences are stored strictly in your browser's local storage (localStorage). This data never leaves your device.",
+      "privacy.thirdparty.title": "Third-Party Services",
+      "privacy.thirdparty.p1":
+        "The extension does not communicate with any server other than the Kick API. No ads, trackers, analytics, or third parties are involved.",
+      "privacy.contact.title": "Contact & Contributing",
+      "privacy.contact.p1":
+        'For questions, feedback or issues, feel free to open a ticket on <a class="link-accent" href="https://github.com/akamusti/kick-notifier/issues" target="_blank" rel="noreferrer">GitHub Issues</a> or visit <a class="link-accent" href="https://akamusti.github.io/" target="_blank" rel="noreferrer">akamusti.github.io</a>.',
+      "privacy.lastupdated": "Last updated: 2026",
       "footer.copy": "© 2026 akamusti",
       "footer.home": "setup guide",
       "footer.home.index": "home",
-      "footer.privacy": "privacy policy",
-      "privacy.h1": "Privacy Policy",
-      "privacy.lead":
-        "Kick Notifier values your privacy. This page explains what data the extension collects and how it is used.",
-      "privacy.collection.title": "Data Collection",
-      "privacy.collection.p1":
-        "Kick Notifier sends requests to the Kick API to show the names and viewer counts of the Kick users you follow. These requests are only made when the extension is open and you manually trigger them.",
-      "privacy.collection.p2":
-        "The extension does not collect any personal data, identifiers, or usage statistics.",
-      "privacy.storage.title": "Data Storage",
-      "privacy.storage.p1":
-        "Your follow list and language preference are stored only in your browser's local storage (localStorage). This data never leaves your device and is not accessible to us.",
-      "privacy.thirdparty.title": "Third-Party Services",
-      "privacy.thirdparty.p1":
-        "The extension does not connect to any third-party services besides the Kick API. No ads, analytics, or tracking tools are used.",
-      "privacy.changes.title": "Policy Changes",
-      "privacy.changes.p1":
-        "Changes to this policy will be announced on the GitHub repository. You can follow the repo page for updates.",
-      "privacy.contact.title": "Contact",
-      "privacy.contact.p1":
-        'For questions, you can reach us via GitHub: <a href="https://github.com/akamusti/kick-notifier/issues" target="_blank" rel="noreferrer">GitHub Issues</a> or find me here: <a href="https://akamusti.github.io/" target="_blank" rel="noreferrer">akamusti.github.io</a>',
-      "privacy.lastupdated": "Last updated: September 3, 2026",
-      "docs.h1": "Download for your browser and install it.",
-      "docs.lead":
-        "Install from AMO for Firefox, and download the zip archive from the GitHub Releases section for Chromium-based browsers.",
-      "docs.firefox": "Firefox — install from AMO",
-      "docs.ff.desc": "Install the extension directly from the Firefox Add-ons store (AMO).",
-      "docs.ff.btn": "Download from Firefox",
-      "docs.amo": "Firefox AMO page",
-      "docs.chromium": "Chromium — install in developer mode",
-      "docs.c1": "Download the zip file from the GitHub releases page and extract it to a folder.",
-      "docs.c2": "Go to <code>chrome://extensions</code>.",
-      "docs.c3": "Enable the <strong>Developer mode</strong> toggle in the top right.",
-      "docs.c4": "Click <strong>Load unpacked</strong>.",
-      "docs.c5": "Select the <strong>kick-takipci-chromium</strong> folder you extracted.",
-      "docs.chr": "Chromium releases page",
-      "docs.note":
-        "Use the AMO page for Firefox and the GitHub Releases section for Chromium, so you safely get the latest version of the extension."
+      "footer.privacy": "privacy policy"
     }
   };
 
@@ -168,9 +155,30 @@
     apply();
   }
 
+  function setupCopyButtons() {
+    var copyButtons = document.querySelectorAll("[data-copy]");
+    copyButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        var text = button.getAttribute("data-copy");
+        if (!text) return;
+        navigator.clipboard.writeText(text).then(function () {
+          var copyTextSpan = button.querySelector(".copy-text");
+          if (copyTextSpan) {
+            var orig = copyTextSpan.innerHTML;
+            copyTextSpan.innerHTML = i18n[lang]["docs.copied"] || "Copied!";
+            setTimeout(function () {
+              copyTextSpan.innerHTML = orig;
+            }, 2000);
+          }
+        });
+      });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     var btn = document.getElementById("lang-toggle");
     if (btn) btn.addEventListener("click", toggle);
     apply();
+    setupCopyButtons();
   });
 })();

@@ -3,92 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gizlilik Politikası | Kick Notifier</title>
+    <title>Gizlilik Politikası — Kick Notifier</title>
     <meta
       name="description"
-      content="Kick Notifier eklentisinin gizlilik politikası ve veri toplama uygulamaları."
+      content="Kick Notifier eklentisinin gizlilik politikası ve veri güvenliği ilkeleri."
     />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none'; style-src 'self'; img-src 'self'; script-src 'self'"
+      content="default-src 'none'; style-src 'self'; img-src 'self' data:; script-src 'self'"
     />
     <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="lang.js?v=4" defer></script>
+    <script src="lang.js?v=5" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="wrap bar">
-        <a class="brand" href="index.html">
-          <img src="logo.png" alt="" width="20" height="20" />
+        <a class="brand" href="index.html" aria-label="Kick Notifier Anasayfa">
+          <div class="brand-icon-wrap">
+            <img src="logo.png" alt="Kick Notifier Logo" width="20" height="20" />
+          </div>
           <span>kick-notifier</span>
         </a>
         <nav aria-label="Ana menü">
-          <a href="index.html" data-i18n="nav.home">Anasayfa</a>
-          <a href="https://github.com/akamusti/kick-notifier" target="_blank" rel="noreferrer">GitHub</a>
-          <button id="lang-toggle" class="lang-btn" type="button" title="Dil / Language">EN</button>
+          <a class="nav-link" href="index.html" data-i18n="nav.home">Anasayfa</a>
+          <a class="nav-link" href="docs.html" data-i18n="nav.docs">Kurulum</a>
+          <a class="nav-link" href="https://github.com/akamusti/kick-notifier" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <button id="lang-toggle" class="lang-btn" type="button" title="Dili Değiştir / Switch Language">
+            <span class="on">TR</span><i>/</i><span>EN</span>
+          </button>
         </nav>
       </div>
     </header>
 
     <main class="wrap">
       <section class="intro">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span data-i18n="privacy.badge">🛡️ %100 Gizlilik Odaklı & Yerel Depolama</span>
+        </div>
         <h1 data-i18n="privacy.h1">Gizlilik Politikası</h1>
         <p class="lead" data-i18n="privacy.lead">
-          Kick Notifier gizliliğinize önem verir. Bu sayfa, eklentinin hangi verileri topladığını ve nasıl kullanıldığını açıklar.
+          Kick Notifier gizliliğinize en üst düzeyde önem verir. Bu sayfa, eklentinin hangi verileri kullandığını ve nasıl korunduğunu açıklar.
         </p>
       </section>
 
-      <section id="toplama">
-        <h2 class="section-title" data-i18n="privacy.collection.title">Veri Toplama</h2>
-        <p data-i18n="privacy.collection.p1">
-          Kick Notifier, takip ettiğiniz Kick kullanıcılarının adlarını ve izleyici sayılarını göstermek için Kick API'sine istekler gönderir. Bu istekler yalnızca eklenti açıkken ve siz-manuel olarak tetiklediğinizde yapılır.
+      <section id="toplama" class="section-card">
+        <h2 class="section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span data-i18n="privacy.collection.title">Veri Toplama ve Kullanım</span>
+        </h2>
+        <p class="docs-desc" data-i18n="privacy.collection.p1">
+          Kick Notifier, takip ettiğiniz yayıncıların canlı yayın durumunu ve izleyici sayılarını çekmek için doğrudan resmi Kick API'sine istek gönderir. Bu istekler yalnızca eklenti penceresi açıkken gerçekleşir.
         </p>
-        <p data-i18n="privacy.collection.p2">
-          Eklenti herhangi bir kişisel veri, tanımlayıcı bilgi veya kullanım istatistiği toplamaz.
-        </p>
-      </section>
-
-      <section id="saklama">
-        <h2 class="section-title" data-i18n="privacy.storage.title">Veri Saklama</h2>
-        <p data-i18n="privacy.storage.p1">
-          Takip listeniz ve dil tercihiniz yalnızca tarayıcınızın yerel depolama alanında (localStorage) saklanır. Bu veriler cihazınızdan dışarı çıkmaz ve bizim tarafımızdan erişilemez.
+        <p class="docs-desc" data-i18n="privacy.collection.p2">
+          Eklenti hiçbir kişisel veri, kimlik bilgisi, tarama geçmişi veya kullanım istatistiği toplamaz ve kaydetmez.
         </p>
       </section>
 
-      <section id="ucuncu">
-        <h2 class="section-title" data-i18n="privacy.thirdparty.title">Üçüncü Taraf Hizmetleri</h2>
-        <p data-i18n="privacy.thirdparty.p1">
-          Eklenti, Kick API dışında herhangi bir üçüncü taraf hizmetiyle bağlantı kurmaz. Reklam, analitik veya izleme aracı kullanılmaz.
+      <section id="saklama" class="section-card">
+        <h2 class="section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+          <span data-i18n="privacy.storage.title">Veri Saklama (Yerel Depolama)</span>
+        </h2>
+        <p class="docs-desc" data-i18n="privacy.storage.p1">
+          Takip listeniz ve dil seçiminiz yalnızca tarayıcınızın kendi yerel depolama alanında (localStorage) saklanır. Bu veriler cihazınızdan asla dışarı çıkmaz ve üçüncü kişilerle paylaşılmaz.
         </p>
       </section>
 
-      <section id="degisiklik">
-        <h2 class="section-title" data-i18n="privacy.changes.title">Politika Değişiklikleri</h2>
-        <p data-i18n="privacy.changes.p1">
-          Bu politikada yapılacak değişiklikler GitHub deposunda duyurulacaktır. Güncellemeler için Depo sayfasını takip edebilirsiniz.
+      <section id="ucuncu" class="section-card">
+        <h2 class="section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+          <span data-i18n="privacy.thirdparty.title">Üçüncü Taraf Hizmetleri</span>
+        </h2>
+        <p class="docs-desc" data-i18n="privacy.thirdparty.p1">
+          Eklenti, Kick API haricinde hiçbir sunucuya veya üçüncü taraf servise bağlanmaz. Reklam, analitik, telemetri veya izleme aracı içermez.
         </p>
       </section>
 
-      <section id="iletisim">
-        <h2 class="section-title" data-i18n="privacy.contact.title">İletişim</h2>
-        <p data-i18n="privacy.contact.p1">
-          Sorularınız için GitHub üzerinden iletişime geçebilirsiniz:
-          <a href="https://github.com/akamusti/kick-notifier/issues" target="_blank" rel="noreferrer">GitHub Issues</a>
-          veya kişisel sitemden bana ulaşabilirsiniz:
-          <a href="https://akamusti.github.io/" target="_blank" rel="noreferrer">akamusti.github.io</a>
+      <section id="iletisim" class="section-card">
+        <h2 class="section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          <span data-i18n="privacy.contact.title">İletişim & Katkı</span>
+        </h2>
+        <p class="docs-desc" data-i18n="privacy.contact.p1">
+          Her türlü soru, öneri veya hata bildirimi için
+          <a class="link-accent" href="https://github.com/akamusti/kick-notifier/issues" target="_blank" rel="noreferrer">GitHub Issues</a>
+          üzerinden iletişime geçebilir veya
+          <a class="link-accent" href="https://akamusti.github.io/" target="_blank" rel="noreferrer">akamusti.github.io</a>
+          adresini ziyaret edebilirsiniz.
         </p>
       </section>
 
       <section class="note">
-        <p data-i18n="privacy.lastupdated">Son güncelleme: 3 Eylül 2026</p>
+        <p data-i18n="privacy.lastupdated">Son güncelleme: 2026</p>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="wrap bar">
         <span data-i18n="footer.copy">&copy; 2026 akamusti</span>
-        <a href="index.html" data-i18n="footer.home.index">anasayfa</a>
+        <span class="foot-links">
+          <a href="index.html" data-i18n="footer.home.index">anasayfa</a>
+          <a href="docs.html" data-i18n="footer.home">kurulum rehberi</a>
+          <a href="https://github.com/akamusti/kick-notifier" target="_blank" rel="noreferrer">github</a>
+        </span>
       </div>
     </footer>
   </body>

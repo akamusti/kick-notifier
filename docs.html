@@ -3,30 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kurulum Rehberi | Kick Notifier</title>
+    <title>Kurulum Rehberi — Kick Notifier</title>
     <meta
       name="description"
-      content="Kick Notifier eklentisini Firefox'a ve Chromium tabanlı tarayıcılara nasıl kuracağını öğren."
+      content="Kick Notifier eklentisini Firefox'a ve Chromium tabanlı tarayıcılara (Chrome, Edge, Brave) nasıl kuracağını adım adım öğren."
     />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none'; style-src 'self'; img-src 'self'; script-src 'self'"
+      content="default-src 'none'; style-src 'self'; img-src 'self' data:; script-src 'self'"
     />
     <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="lang.js?v=4" defer></script>
+    <script src="lang.js?v=5" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="wrap bar">
-        <a class="brand" href="index.html">
-          <img src="logo.png" alt="" width="20" height="20" />
+        <a class="brand" href="index.html" aria-label="Kick Notifier Anasayfa">
+          <div class="brand-icon-wrap">
+            <img src="logo.png" alt="Kick Notifier Logo" width="20" height="20" />
+          </div>
           <span>kick-notifier</span>
         </a>
         <nav aria-label="Ana menü">
-          <a href="index.html" data-i18n="nav.home">Anasayfa</a>
-          <a href="https://github.com/akamusti/kick-notifier" target="_blank" rel="noreferrer">GitHub</a>
-          <button id="lang-toggle" class="lang-btn" type="button" title="Dil / Language">EN</button>
+          <a class="nav-link" href="index.html" data-i18n="nav.home">Anasayfa</a>
+          <a class="nav-link active" href="docs.html" data-i18n="nav.docs">Kurulum</a>
+          <a class="nav-link" href="https://github.com/akamusti/kick-notifier" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <button id="lang-toggle" class="lang-btn" type="button" title="Dili Değiştir / Switch Language">
+            <span class="on">TR</span><i>/</i><span>EN</span>
+          </button>
         </nav>
       </div>
     </header>
@@ -35,40 +45,59 @@
       <section class="intro">
         <h1 data-i18n="docs.h1">Tarayıcına uygun şekilde indirip yükle.</h1>
         <p class="lead" data-i18n="docs.lead">
-          Firefox için AMO üzerinden, Chromium tabanlı tarayıcılar için zip
-          arşivini GitHub Releases bölümünden indir.
+          Firefox için AMO üzerinden tek tıkla, Chromium tabanlı tarayıcılar için zip
+          arşivini GitHub Releases bölümünden indirip kurabilirsin.
         </p>
       </section>
 
-      <section id="firefox">
-        <h2 class="section-title" data-i18n="docs.firefox">Firefox &mdash; AMO'dan kurulum</h2>
-        <p class="docs-desc" data-i18n="docs.ff.desc">Eklentiyi doğrudan Firefox eklenti mağazasından (AMO) kur.</p>
+      <!-- Firefox Installation Card -->
+      <section id="firefox" class="section-card">
+        <h2 class="section-title">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm6.91 10.74a7.19 7.19 0 0 1-1.39 3.86 6.84 6.84 0 0 1-4.7 2.4 8.78 8.78 0 0 1-2.8-.23 7.8 7.8 0 0 1-4.66-3.1 7.27 7.27 0 0 1-1.36-4.67 7.74 7.74 0 0 1 2.32-5.41 7.17 7.17 0 0 1 4.74-2c.4 0 .8.04 1.18.11a5.6 5.6 0 0 0-.48 2.29c0 2.84 2.15 4.3 4.29 4.3a4.7 4.7 0 0 0 2.86-1.05 6.64 6.64 0 0 1 1 3.5z"/>
+          </svg>
+          <span data-i18n="docs.firefox">Firefox — AMO'dan kurulum</span>
+        </h2>
+        <p class="docs-desc" data-i18n="docs.ff.desc">Eklentiyi doğrudan resmi Firefox Eklenti Mağazası'ndan (AMO) güvenle kur.</p>
         <a
           class="btn btn-solid docs-btn"
           href="https://addons.mozilla.org/en-US/firefox/addon/kick-live-stream-notifier/"
           target="_blank"
           rel="noreferrer"
         >
-          <span data-i18n="docs.ff.btn">Firefox'tan indir</span>
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm6.91 10.74a7.19 7.19 0 0 1-1.39 3.86 6.84 6.84 0 0 1-4.7 2.4 8.78 8.78 0 0 1-2.8-.23 7.8 7.8 0 0 1-4.66-3.1 7.27 7.27 0 0 1-1.36-4.67 7.74 7.74 0 0 1 2.32-5.41 7.17 7.17 0 0 1 4.74-2c.4 0 .8.04 1.18.11a5.6 5.6 0 0 0-.48 2.29c0 2.84 2.15 4.3 4.29 4.3a4.7 4.7 0 0 0 2.86-1.05 6.64 6.64 0 0 1 1 3.5z"/>
+          </svg>
+          <span data-i18n="docs.ff.btn">Firefox AMO'dan İndir</span>
         </a>
-        <p class="after-steps">
-          <a href="https://addons.mozilla.org/en-US/firefox/addon/kick-live-stream-notifier/" target="_blank" rel="noreferrer">
-            <span data-i18n="docs.amo">Firefox AMO sayfası</span> &rarr;
-          </a>
-        </p>
       </section>
 
-      <section id="chromium">
-        <h2 class="section-title" data-i18n="docs.chromium">Chromium &mdash; geliştirici moduyla kurulum</h2>
+      <!-- Chromium Installation Card -->
+      <section id="chromium" class="section-card">
+        <h2 class="section-title">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3.6c2.47 0 4.6 1.44 5.64 3.53l-5.64.07a4.8 4.8 0 0 0-4.32 2.7l-2.8-4.86A8.4 8.4 0 0 1 12 5.6zm-6.4 3.7l2.8 4.85a4.8 4.8 0 0 0 2.4 3.97l-2.82 4.9A8.4 8.4 0 0 1 5.6 9.3zm6.4 9.1a4.8 4.8 0 0 0 4.16-2.4l2.82 4.89A8.39 8.39 0 0 1 12 20.4a8.4 8.4 0 0 1-5.64-2.13l2.82-4.9c.77 1.45 2.27 2.43 4 2.43z"/>
+          </svg>
+          <span data-i18n="docs.chromium">Chromium (Chrome, Edge, Brave) — geliştirici moduyla kurulum</span>
+        </h2>
         <ol class="steps">
-          <li data-i18n="docs.c1">GitHub releases sayfasından zip dosyasını indir ve bir klasöre çıkart.</li>
-          <li data-i18n="docs.c2"><code>chrome://extensions</code> adresine gir.</li>
-          <li data-i18n="docs.c3">Sağ üst köşedeki <strong>Geliştirici modu</strong> anahtarını aç.</li>
-          <li data-i18n="docs.c4"><strong>Paketlenmemiş öğe yükle</strong> (Load unpacked) butonuna tıkla.</li>
+          <li data-i18n="docs.c1">GitHub releases sayfasından son sürüm .zip dosyasını indir ve bir klasöre çıkart.</li>
+          <li>
+            <span data-i18n="docs.c2_prefix">Tarayıcının adres çubuğuna şunu yazıp Enter'a bas:</span>
+            <span class="code-copy-wrapper">
+              <code>chrome://extensions</code>
+              <button class="btn-copy" type="button" data-copy="chrome://extensions" title="Kopyala / Copy">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2h-8a2 2 0 00-2 2z"/><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h2"/></svg>
+                <span class="copy-text" data-i18n="docs.copy">Kopyala</span>
+              </button>
+            </span>
+          </li>
+          <li data-i18n="docs.c3">Sağ üst köşedeki <strong>Geliştirici modu</strong> (Developer mode) anahtarını aç.</li>
+          <li data-i18n="docs.c4">Sol üstteki <strong>Paketlenmemiş öğe yükle</strong> (Load unpacked) butonuna tıkla.</li>
           <li data-i18n="docs.c5">Çıkarttığın <strong>kick-takipci-chromium</strong> klasörünü seç.</li>
         </ol>
         <p class="after-steps">
-          <a href="https://github.com/akamusti/kick-takipci-chromium/releases" target="_blank" rel="noreferrer">
+          <a class="link-accent" href="https://github.com/akamusti/kick-takipci-chromium/releases" target="_blank" rel="noreferrer">
             <span data-i18n="docs.chr">Chromium releases sayfası</span> &rarr;
           </a>
         </p>
@@ -76,8 +105,8 @@
 
       <section class="note">
         <p data-i18n="docs.note">
-          Firefox için AMO sayfasını, Chromium için GitHub Releases bölümünü
-          kullan; böylece eklentinin güncel sürümünü güvenli şekilde almış olursun.
+          💡 Firefox için AMO sayfasını, Chromium için GitHub Releases bölümünü
+          kullan; böylece eklentinin güncel sürümünü her zaman güvenli şekilde almış olursun.
         </p>
       </section>
     </main>
@@ -85,8 +114,11 @@
     <footer class="site-footer">
       <div class="wrap bar">
         <span data-i18n="footer.copy">&copy; 2026 akamusti</span>
-        <a href="index.html" data-i18n="footer.home.index">anasayfa</a>
-        <a href="privacy.html" data-i18n="footer.privacy">gizlilik politikası</a>
+        <span class="foot-links">
+          <a href="index.html" data-i18n="footer.home.index">anasayfa</a>
+          <a href="privacy.html" data-i18n="footer.privacy">gizlilik politikası</a>
+          <a href="https://github.com/akamusti/kick-notifier" target="_blank" rel="noreferrer">github</a>
+        </span>
       </div>
     </footer>
   </body>
