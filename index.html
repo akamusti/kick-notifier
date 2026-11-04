@@ -42,7 +42,8 @@
     </header>
 
     <main class="wrap hero-wrap">
-      <section class="hero">
+      <section class="hero-grid">
+        <div class="hero-copy">
         <div class="badge">
           <span class="badge-dot"></span>
           <span data-i18n="intro.badge">firefox · chrome · edge · brave</span>
@@ -82,23 +83,14 @@
           </a>
         </div>
 
-        <div class="feature-pills">
-          <div class="pill">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            <span data-i18n="intro.pill.light">⚡ Ultra Hafif</span>
-          </div>
-          <div class="pill">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            <span data-i18n="intro.pill.privacy">🛡️ Sıfır İzleyici & Reklamsız</span>
-          </div>
-          <div class="pill">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-            <span data-i18n="intro.pill.opensource">✨ %100 Açık Kaynak</span>
-          </div>
+        <div class="hero-proof" aria-label="Özellikler">
+          <span data-i18n="intro.pill.light">Ultra Hafif</span>
+          <span data-i18n="intro.pill.privacy">Sıfır İzleyici & Reklamsız</span>
+          <span data-i18n="intro.pill.opensource">%100 Açık Kaynak</span>
+        </div>
         </div>
 
-        <!-- Extension Interactive Mockup Preview -->
-        <div class="mockup-container" aria-label="Eklenti Önizlemesi">
+        <aside class="mockup-container" aria-label="Eklenti Önizlemesi">
           <div class="mockup-card">
             <div class="mockup-header">
               <div class="mockup-title">
@@ -162,7 +154,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </aside>
       </section>
     </main>
 

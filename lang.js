@@ -5,9 +5,10 @@
       "nav.home": "Anasayfa",
       "nav.docs": "Kurulum",
       "intro.badge": "v1.2 · firefox · chrome · edge · brave",
-      "intro.h1": "Takip ettiğin Kick yayıncılarını hiç kaçırma.",
+      "intro.h1":
+        "Yayıncıların <span class=\"hero-highlight\">canlıya geçtiği an</span> haberin olsun.",
       "intro.lead":
-        "Favori yayıncıların canlı olup olmadığını, izleyici sayılarını ve profil bilgilerini tek bakışta gösteren açık kaynaklı tarayıcı eklentisi. Gereksiz hiçbir şey yok.",
+        "Takip ettiğin Kick yayıncılarını, izleyici sayılarını ve yayınlarını tek bir sade pencerede gör.",
       "intro.dl.firefox": "Firefox için indir",
       "intro.dl.chromium": "Chromium için indir",
       "intro.pill.light": "Ultra hafif",
@@ -66,9 +67,10 @@
       "nav.home": "Home",
       "nav.docs": "Setup",
       "intro.badge": "v1.2 · firefox · chrome · edge · brave",
-      "intro.h1": "Never miss the Kick streamers you follow.",
+      "intro.h1":
+        "Know when your favorite streamers <span class=\"hero-highlight\">go live.</span>",
       "intro.lead":
-        "An open-source browser extension that displays streamer live status, viewer counts, and profiles at a single glance. Zero bloat.",
+        "See the Kick streamers you follow, their viewer counts, and live status in one simple view.",
       "intro.dl.firefox": "Download for Firefox",
       "intro.dl.chromium": "Download for Chromium",
       "intro.pill.light": "Ultra lightweight",
