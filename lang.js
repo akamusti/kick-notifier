@@ -10,9 +10,9 @@
         "Favori yayıncıların canlı olup olmadığını, izleyici sayılarını ve profil bilgilerini tek bakışta gösteren açık kaynaklı tarayıcı eklentisi. Gereksiz hiçbir şey yok.",
       "intro.dl.firefox": "Firefox için indir",
       "intro.dl.chromium": "Chromium için indir",
-      "intro.pill.light": "⚡ Ultra Hafif",
-      "intro.pill.privacy": "🛡️ Sıfır İzleyici & Reklamsız",
-      "intro.pill.opensource": "✨ %100 Açık Kaynak",
+      "intro.pill.light": "Ultra hafif",
+      "intro.pill.privacy": "Takip ve reklam yok",
+      "intro.pill.opensource": "%100 açık kaynak",
       "mockup.live_count": "2 CANLI",
       "mockup.search": "Yayıncı ara veya ekle...",
       "mockup.live": "● CANLI",
@@ -38,7 +38,7 @@
       "docs.chr": "Chromium releases sayfası",
       "docs.note":
         "💡 Firefox için AMO sayfasını, Chromium için GitHub Releases bölümünü kullan; böylece eklentinin güncel sürümünü her zaman güvenli şekilde almış olursun.",
-      "privacy.badge": "🛡️ %100 Gizlilik Odaklı & Yerel Depolama",
+      "privacy.badge": "%100 gizlilik odaklı · yerel depolama",
       "privacy.h1": "Gizlilik Politikası",
       "privacy.lead":
         "Kick Notifier gizliliğinize en üst düzeyde önem verir. Bu sayfa, eklentinin hangi verileri kullandığını ve nasıl korunduğunu açıklar.",
@@ -71,9 +71,9 @@
         "An open-source browser extension that displays streamer live status, viewer counts, and profiles at a single glance. Zero bloat.",
       "intro.dl.firefox": "Download for Firefox",
       "intro.dl.chromium": "Download for Chromium",
-      "intro.pill.light": "⚡ Ultra Lightweight",
-      "intro.pill.privacy": "🛡️ Zero Tracking & No Ads",
-      "intro.pill.opensource": "✨ 100% Open Source",
+      "intro.pill.light": "Ultra lightweight",
+      "intro.pill.privacy": "No tracking or ads",
+      "intro.pill.opensource": "100% open source",
       "mockup.live_count": "2 LIVE",
       "mockup.search": "Search or add streamer...",
       "mockup.live": "● LIVE",
@@ -99,7 +99,7 @@
       "docs.chr": "Chromium releases page",
       "docs.note":
         "💡 Use AMO for Firefox and GitHub Releases for Chromium to ensure you always get the latest and safest release.",
-      "privacy.badge": "🛡️ 100% Privacy Focused & Local Storage",
+      "privacy.badge": "Privacy first · local storage",
       "privacy.h1": "Privacy Policy",
       "privacy.lead":
         "Kick Notifier takes your privacy very seriously. This page explains what data is accessed and how it is protected.",
